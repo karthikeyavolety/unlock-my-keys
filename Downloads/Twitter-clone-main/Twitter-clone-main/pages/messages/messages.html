@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Messages</title>
+    <link rel="stylesheet" href="messages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <input type="radio" name="chat-select" id="chat-1" checked hidden />
+      <input type="radio" name="chat-select" id="chat-2" hidden />
+      <input type="radio" name="chat-select" id="chat-3" hidden />
+      <input type="radio" name="chat-select" id="chat-4" hidden />
+
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <nav class="nav-list">
+          <a class="nav-item" href="../../index.html"
+            ><i class="fa-solid fa-house"></i>Home</a
+          >
+          <a class="nav-item" href="#"
+            ><i class="fa-solid fa-magnifying-glass"></i>Explore</a
+          >
+          <a class="nav-item" href="#"
+            ><i class="fa-solid fa-bell"></i>Notifications</a
+          >
+          <a class="nav-item active" href="../messages/messages.html"
+            ><i class="fa-solid fa-envelope"></i>Messages</a
+          >
+          <a class="nav-item" href="#"><i class="fa-solid fa-brain"></i>Grok</a>
+          <a class="nav-item" href="#"
+            ><i class="fa-solid fa-user-group"></i>Communities</a
+          >
+          <a class="nav-item" href="#"
+            ><i class="fa-solid fa-crown"></i>Premium</a
+          >
+          <a class="nav-item" href="../Profile/Profile.html"
+            ><i class="fa-regular fa-user"></i>Profile</a
+          >
+          <a class="nav-item" href="#"
+            ><i class="fa-solid fa-ellipsis"></i>More</a
+          >
+        </nav>
+        <button class="post-btn">Post</button>
+        <div class="profile-summary">
+          <div class="profile-avatar">N</div>
+          <div>
+            <div class="profile-name">DarkX</div>
+            <div class="profile-handle">@DarkX</div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="messages-panel">
+        <header class="messages-header">
+          <div>
+            <div class="page-title">Messages</div>
+            <div class="subtext">Search Direct Messages</div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn">⚙</button>
+            <button class="icon-btn">＋</button>
+          </div>
+        </header>
+
+        <div class="chat-search-card">
+          <span class="search-icon">🔍</span>
+          <input type="search" placeholder="Search Direct Messages" />
+        </div>
+
+        <div class="chat-label-row">
+          <span class="chat-group-label">Chat</span>
+          <span class="chat-tag">Beta</span>
+        </div>
+
+        <div class="chat-list">
+          <label class="chat-item" for="chat-1">
+            <div class="avatar">A</div>
+            <div class="chat-info">
+              <div class="chat-title-row">
+                <span class="chat-title">IndexPlease</span>
+                <span class="chat-time">Now</span>
+              </div>
+              <div class="chat-snippet">@PleaseIndex</div>
+            </div>
+          </label>
+          <label class="chat-item" for="chat-2">
+            <div class="avatar">M</div>
+            <div class="chat-info">
+              <div class="chat-title-row">
+                <span class="chat-title">Mike Scully</span>
+                <span class="chat-time">16h</span>
+              </div>
+              <div class="chat-snippet">
+                Running an agency or working with clients.
+              </div>
+            </div>
+          </label>
+          <label class="chat-item" for="chat-3">
+            <div class="avatar">F</div>
+            <div class="chat-info">
+              <div class="chat-title-row">
+                <span class="chat-title">Funny Me...</span>
+                <span class="chat-time">Jul 2</span>
+              </div>
+              <div class="chat-snippet">Still interested</div>
+            </div>
+          </label>
+          <label class="chat-item" for="chat-4">
+            <div class="avatar">V</div>
+            <div class="chat-info">
+              <div class="chat-title-row">
+                <span class="chat-title">Video Ga...</span>
+                <span class="chat-time">May 5</span>
+              </div>
+              <div class="chat-snippet">
+                Hello 👋 We are offering AI partnerships.
+              </div>
+            </div>
+          </label>
+        </div>
+      </main>
+
+      <section class="conversation-panel">
+        <article class="conversation conversation-1">
+          <input type="checkbox" id="emoji-1" hidden />
+          <div class="conversation-header">
+            <div class="conversation-profile">
+              <div class="avatar-large">A</div>
+              <div>
+                <div class="conversation-title">IndexPlease</div>
+                <div class="conversation-subtitle">
+                  @PleaseIndex · Active now
+                </div>
+              </div>
+            </div>
+            <div class="header-actions">
+              <button class="icon-btn">⋯</button>
+              <button class="icon-btn">⚙</button>
+            </div>
+          </div>
+          <div class="conversation-body">
+            <div class="message from-other">
+              <div class="msg-text">
+                Hello 👋 Our team is offering AI partnerships on video content.
+              </div>
+            </div>
+          </div>
+          <div class="composer-row">
+            <label class="emoji-toggle" for="emoji-1">😀</label>
+            <input type="text" placeholder="Start a new message" />
+            <button class="send-btn">Send</button>
+          </div>
+          <div class="emoji-overlay">
+            <div class="emoji-overlay-header">
+              <span>Search emojis</span>
+              <label class="icon-btn" for="emoji-1">×</label>
+            </div>
+            <div class="emoji-search">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="Search emojis" />
+            </div>
+            <div class="emoji-row">
+              <span>😀</span>
+              <span>😎</span>
+              <span>😇</span>
+              <span>😍</span>
+              <span>😋</span>
+              <span>🤓</span>
+              <span>🙌</span>
+            </div>
+            <div class="emoji-grid">
+              <button>😀</button>
+              <button>😁</button>
+              <button>😂</button>
+              <button>🤣</button>
+              <button>😃</button>
+              <button>😄</button>
+              <button>😅</button>
+              <button>😆</button>
+              <button>😉</button>
+              <button>😊</button>
+              <button>😋</button>
+              <button>😎</button>
+            </div>
+            <div class="emoji-footer">Smileys & people</div>
+          </div>
+        </article>
+
+        <article class="conversation conversation-2">
+          <input type="checkbox" id="emoji-2" hidden />
+          <div class="conversation-header">
+            <div class="conversation-profile">
+              <div class="avatar-large">M</div>
+              <div>
+                <div class="conversation-title">Mike Scully</div>
+                <div class="conversation-subtitle">@MikeScully · 16h ago</div>
+              </div>
+            </div>
+            <div class="header-actions">
+              <button class="icon-btn">⋯</button>
+              <button class="icon-btn">⚙</button>
+            </div>
+          </div>
+          <div class="conversation-body">
+            <div class="message from-other">
+              <div class="msg-text">
+                Running an agency or working with clients? Let’s connect.
+              </div>
+            </div>
+          </div>
+          <div class="composer-row">
+            <label class="emoji-toggle" for="emoji-2">😀</label>
+            <input type="text" placeholder="Start a new message" />
+            <button class="send-btn">Send</button>
+          </div>
+          <div class="emoji-overlay">
+            <div class="emoji-overlay-header">
+              <span>Search emojis</span>
+              <label class="icon-btn" for="emoji-2">×</label>
+            </div>
+            <div class="emoji-search">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="Search emojis" />
+            </div>
+            <div class="emoji-row">
+              <span>😀</span>
+              <span>😎</span>
+              <span>😇</span>
+              <span>😍</span>
+              <span>😋</span>
+              <span>🤓</span>
+              <span>🙌</span>
+            </div>
+            <div class="emoji-grid">
+              <button>😀</button>
+              <button>😁</button>
+              <button>😂</button>
+              <button>🤣</button>
+              <button>😃</button>
+              <button>😄</button>
+              <button>😅</button>
+              <button>😆</button>
+              <button>😉</button>
+              <button>😊</button>
+              <button>😋</button>
+              <button>😎</button>
+            </div>
+            <div class="emoji-footer">Smileys & people</div>
+          </div>
+        </article>
+
+        <article class="conversation conversation-3">
+          <input type="checkbox" id="emoji-3" hidden />
+          <div class="conversation-header">
+            <div class="conversation-profile">
+              <div class="avatar-large">F</div>
+              <div>
+                <div class="conversation-title">Funny Me...</div>
+                <div class="conversation-subtitle">@bestme · Jul 2</div>
+              </div>
+            </div>
+            <div class="header-actions">
+              <button class="icon-btn">⋯</button>
+              <button class="icon-btn">⚙</button>
+            </div>
+          </div>
+          <div class="conversation-body">
+            <div class="message from-other">
+              <div class="msg-text">
+                Still interested in the offer? Let me know.
+              </div>
+            </div>
+          </div>
+          <div class="composer-row">
+            <label class="emoji-toggle" for="emoji-3">😀</label>
+            <input type="text" placeholder="Start a new message" />
+            <button class="send-btn">Send</button>
+          </div>
+          <div class="emoji-overlay">
+            <div class="emoji-overlay-header">
+              <span>Search emojis</span>
+              <label class="icon-btn" for="emoji-3">×</label>
+            </div>
+            <div class="emoji-search">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="Search emojis" />
+            </div>
+            <div class="emoji-row">
+              <span>😀</span>
+              <span>😎</span>
+              <span>😇</span>
+              <span>😍</span>
+              <span>😋</span>
+              <span>🤓</span>
+              <span>🙌</span>
+            </div>
+            <div class="emoji-grid">
+              <button>😀</button>
+              <button>😁</button>
+              <button>😂</button>
+              <button>🤣</button>
+              <button>😃</button>
+              <button>😄</button>
+              <button>😅</button>
+              <button>😆</button>
+              <button>😉</button>
+              <button>😊</button>
+              <button>😋</button>
+              <button>😎</button>
+            </div>
+            <div class="emoji-footer">Smileys & people</div>
+          </div>
+        </article>
+
+        <article class="conversation conversation-4">
+          <input type="checkbox" id="emoji-4" hidden />
+          <div class="conversation-header">
+            <div class="conversation-profile">
+              <div class="avatar-large">V</div>
+              <div>
+                <div class="conversation-title">Video Ga...</div>
+                <div class="conversation-subtitle">@VideoG · May 5</div>
+              </div>
+            </div>
+            <div class="header-actions">
+              <button class="icon-btn">⋯</button>
+              <button class="icon-btn">⚙</button>
+            </div>
+          </div>
+          <div class="conversation-body">
+            <div class="message from-other">
+              <div class="msg-text">
+                Hello 👋 We are offering AI partnerships on video content.
+              </div>
+            </div>
+          </div>
+          <div class="composer-row">
+            <label class="emoji-toggle" for="emoji-4">😀</label>
+            <input type="text" placeholder="Start a new message" />
+            <button class="send-btn">Send</button>
+          </div>
+          <div class="emoji-overlay">
+            <div class="emoji-overlay-header">
+              <span>Search emojis</span>
+              <label class="icon-btn" for="emoji-4">×</label>
+            </div>
+            <div class="emoji-search">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="Search emojis" />
+            </div>
+            <div class="emoji-row">
+              <span>😀</span>
+              <span>😎</span>
+              <span>😇</span>
+              <span>😍</span>
+              <span>😋</span>
+              <span>🤓</span>
+              <span>🙌</span>
+            </div>
+            <div class="emoji-grid">
+              <button>😀</button>
+              <button>😁</button>
+              <button>😂</button>
+              <button>🤣</button>
+              <button>😃</button>
+              <button>😄</button>
+              <button>😅</button>
+              <button>😆</button>
+              <button>😉</button>
+              <button>😊</button>
+              <button>😋</button>
+              <button>😎</button>
+            </div>
+            <div class="emoji-footer">Smileys & people</div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".conversation")
+          .forEach(function (conversation) {
+            var composerInput = conversation.querySelector(
+              '.composer-row input[type="text"]',
+            );
+            if (!composerInput) return;
+            conversation
+              .querySelectorAll(".emoji-grid button, .emoji-row span")
+              .forEach(function (emoji) {
+                emoji.addEventListener("click", function () {
+                  composerInput.value += emoji.textContent;
+                  composerInput.focus();
+                });
+              });
+          });
+      });
+    </script>
+  </body>
+</html>

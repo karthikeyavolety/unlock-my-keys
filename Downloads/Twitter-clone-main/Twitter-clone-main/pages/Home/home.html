@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>X</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>🏠 Home</li>
+                <li>🔍 Explore</li>
+                <li>🔔 Notifications</li>
+                <li>✉️ Messages</li>
+                <li>👤 Profile</li>
+                <li>⚙️ Settings</li>
+            </ul>
+        </nav>
+
+        <button class="tweet-btn">Post</button>
+    </aside>
+
+    <!-- Main Feed -->
+    <main class="feed">
+
+        <div class="feed-header">
+            <h2>Home</h2>
+        </div>
+
+        <div class="post-box">
+            <input type="text" placeholder="What's happening?">
+        </div>
+
+        <div class="posts"></div>
+
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="trending">
+            <h3>Trending</h3>
+            <p>#AI</p>
+            <p>#WebDevelopment</p>
+            <p>#Sports</p>
+        </div>
+
+        <div class="follow">
+            <h3>Who to follow</h3>
+            <p>OpenAI</p>
+            <p>Google</p>
+            <p>Microsoft</p>
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="home.js"></script>
+
+</body>
+</html>

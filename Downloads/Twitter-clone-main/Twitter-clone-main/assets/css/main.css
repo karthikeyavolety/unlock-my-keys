@@ -1,0 +1,37 @@
+/* HOME PAGE */
+
+.feed{
+    border-right:1px solid #2f3336;
+}
+
+.feed-header{
+    padding:20px;
+    border-bottom:1px solid #2f3336;
+}
+
+.compose{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:20px;
+    border-bottom:1px solid #2f3336;
+}
+
+.compose img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.compose input{
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:20px;
+}
+
+.compose input::placeholder{
+    color:#71767b;
+}

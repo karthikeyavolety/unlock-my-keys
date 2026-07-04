@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Profile</title>
+
+    <link rel="stylesheet" href="Profile.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+
+        <nav>
+
+            <a href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Explore</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="../messages/messages.html">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-brain"></i>
+                <span>Grok</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Communities</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-crown"></i>
+                <span>Premium</span>
+            </a>
+
+            <a href="../profile/profile.html" class="active">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>More</span>
+            </a>
+
+        </nav>
+
+        <button class="post-btn">
+            Post
+        </button>
+
+    </aside>
+
+    <!-- PROFILE -->
+
+    <main class="profile">
+
+        <header class="profile-header">
+
+            <div class="cover"></div>
+
+            <div class="profile-info">
+
+                <img src="../../assets/images/profile.jpeg"
+                class="profile-pic">
+
+                <button class="edit-btn">
+                    Edit profile
+                </button>
+
+                <h2>John Doe</h2>
+
+                <p class="username">@johndoe</p>
+
+                <p class="bio">
+                    Frontend Developer • HTML • CSS • JavaScript
+                </p>
+
+                <div class="details">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Joined January 2025
+                    </span>
+
+                </div>
+
+                <div class="follow">
+
+                    <span><b>210</b> Following</span>
+
+                    <span><b>1.5K</b> Followers</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Tabs -->
+
+        <div class="tabs">
+
+            <span class="selected">Posts</span>
+            <span>Replies</span>
+            <span>Media</span>
+            <span>Likes</span>
+
+        </div>
+
+        <!-- Tweets -->
+
+        <section class="tweet">
+
+            <img src="../../assets/images/profile.jpeg">
+
+            <div>
+
+                <h3>
+                    John Doe
+                    <span>@johndoe · 2h</span>
+                </h3>
+
+                <p>
+                    Building a Twitter clone using only HTML and CSS.
+                </p>
+
+                <div class="tweet-icons">
+
+                    <i class="fa-regular fa-comment"></i>
+
+                    <i class="fa-solid fa-retweet"></i>
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="tweet">
+
+            <img src="../../assets/images/profile.jpeg">
+
+            <div>
+
+                <h3>
+                    John Doe
+                    <span>@johndoe · Yesterday</span>
+                </h3>
+
+                <p>
+                    CSS Grid + Flexbox makes layouts so much easier.
+                </p>
+
+                <div class="tweet-icons">
+
+                    <i class="fa-regular fa-comment"></i>
+
+                    <i class="fa-solid fa-retweet"></i>
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+
+    <aside class="right">
+
+        <input
+        type="text"
+        placeholder="Search">
+
+        <div class="card">
+
+            <h3>Subscribe to Premium</h3>
+
+            <p>
+                Subscribe to unlock new features.
+            </p>
+
+            <button>Subscribe</button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Who to follow</h3>
+
+            <p>@OpenAI</p>
+
+            <p>@Google</p>
+
+            <p>@Microsoft</p>
+
+        </div>
+
+    </aside>
+
+</div>
+
+</body>
+</html>
